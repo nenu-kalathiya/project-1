@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Demo from './component/Demo';
+import Demo from './components/Demo';
+
 
 function App() {
   return (
-    <Demo />
+    <Demo/>
   );
 }
 
