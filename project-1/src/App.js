@@ -60,14 +60,16 @@ function App() {
       </tr>
       {
         data.map((d,i) => {
+          let {id, name, quantity, price, expiry, status} = d
           return(
+
             <tr>
-              <td>{d.id}</td>
-              <td>{d.name}</td>
-              <td>{d.quantity}</td>
-              <td>{d.price}</td>
-              <td>{d.expiry}</td>
-              <td>{d.status.toString()}</td>
+              <td>{id}</td>
+              <td>{name}</td>
+              <td>{quantity}</td>
+              <td>{price}</td>
+              <td>{expiry}</td>
+              <td>{status.toString()}</td>
             </tr>
           )
         }) 
