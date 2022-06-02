@@ -45,7 +45,7 @@ function App() {
 
   let fData = data.filter((d,i) => d.status === true);
 
-  let ans = data.reduce((acc, d, i) => acc + d.bonus + d.salary, 0)
+  let ans = fData.reduce((acc, d, i) => acc + d.salary + d.bonus , 0)
 
   console.log(fData);
 
@@ -72,7 +72,7 @@ function App() {
               <td>{salary}</td>
               <td>{bonus}</td>
               <td>{status.toString()}</td>
-              <td>{d.salary+d.bonus}</td>
+              <td>{salary+bonus}</td>
             </tr>
           )
         }) 
