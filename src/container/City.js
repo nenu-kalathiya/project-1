@@ -5,20 +5,20 @@ class City extends Component {
         super(props);
         
         this.state = {
-            cityName: 'Surat'
+            CityName: 'Surat'
         }
     }
-    changeCity = () => {
+    ChangeCity = () => {
         this.setState({
-            cityName: 'Gandhinagar'
-        })
+            CityName: 'Gandhinagar'
+        });
     }
 
     render() {
         return (
             <div>
-                <p>{this.state.cityName}</p>
-                <button onClick = { () => this.changeCity()}>Change City</button>
+                <p>{this.state.CityName}</p>
+                <button onClick = { () => this.ChangeCity()}>Change City</button>
             </div>
         );
     }
