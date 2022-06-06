@@ -11,4 +11,3 @@ class Demo extends Component {
 }
 
 export default Demo;
-.00
