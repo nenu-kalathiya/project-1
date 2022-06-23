@@ -48,9 +48,9 @@ function App() {
     }
   ];
 
-  let fData = data.filter((d,i) => d.status === true && d.expiry >= 2022);
+  let fData = data.filter((d) => d.status === true && d.expiry >= 2022);
 
-  let ans = data.reduce((acc, d, i) => acc + d.price, 0)
+  let ans = data.reduce((acc, d) => acc + d.price, 0)
 
   console.log(fData);
 
